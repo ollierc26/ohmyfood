@@ -1,0 +1,296 @@
+/*COULEURS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Roboto";
+}
+
+h1,
+h3 {
+  color: black;
+  font-size: 37px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.btn-purple {
+  padding: 20px 30px;
+  border-radius: 35px;
+  font-size: 20px;
+  background-color: #9356DC;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #9356dc), color-stop(69%, #dc56ac));
+  background: linear-gradient(0deg, #9356dc 8%, #dc56ac 69%);
+  color: white;
+  border: none;
+}
+
+.btn-white {
+  padding: 20px 30px;
+  border-radius: 35px;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+  background-color: #f5f5f5;
+  color: black;
+  margin-bottom: 25px;
+  width: 345px;
+}
+
+footer {
+  background-color: #2f2f2f;
+  padding: 30px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+footer li i {
+  margin-right: 7px;
+}
+
+footer h3 {
+  font-family: shrikhand;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 5px 40px;
+  font-weight: 100;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+#reserver {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 45px 40px 65px 40px;
+}
+
+#reserver button {
+  margin-top: 20px;
+}
+
+#reserver h1 {
+  margin: 0;
+}
+
+header .location {
+  background-color: #E7E7E7;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.bouton span {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 25%;
+}
+
+body {
+  margin: 0;
+}
+
+#fonctionnement {
+  padding: 0px 20px 30px 20px;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+  padding: 20px 20px 60px 20px;
+}
+
+#fonctionnement li::marker {
+  background-color: #9356DC;
+  border-radius: 20px;
+}
+
+#fonctionnement button i {
+  margin-right: 20px;
+}
+
+.card-restaurants .desc h4,
+.card-restaurants .desc p {
+  margin: 5px 0;
+}
+
+.card-restaurants {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 275px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.card-restaurants img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-restaurants a {
+  text-decoration: none;
+  color: black;
+}
+
+.desc {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.nouveau {
+  background-color: #88DECA;
+  color: #007C5C;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+header i {
+  margin-right: 90px;
+  margin-left: -90px;
+}
+
+.h1-menu {
+  font-family: shrikhand;
+  background-color: white;
+}
+
+.h1-menu i {
+  font-size: 30px;
+}
+
+.titre-menu {
+  font-family: shrikhand;
+  font-size: 30px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 20px;
+  margin: 0;
+  border-radius: 35px 35px 0 0;
+}
+
+.titre-menu i {
+  margin-left: 55px;
+}
+
+#slider {
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.background-1 {
+  background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.section-menu {
+  margin: 0px 20px 60px 20px;
+}
+
+.section-menu h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.section-menu h3::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #99E2D0;
+}
+
+.section-menu h4 {
+  margin: 5px 0;
+  font-size: 23px;
+}
+
+.menu {
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 200;
+}
+
+.prix {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#commander {
+  text-align: center;
+  margin-bottom: 60px;
+}
+/*# sourceMappingURL=style.css.map */

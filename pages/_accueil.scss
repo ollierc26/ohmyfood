@@ -1,0 +1,108 @@
+header {
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+#reserver {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 45px 40px 65px 40px;
+}
+
+#reserver button {
+    margin-top: 20px;
+}
+
+#reserver h1 {
+    margin: 0;
+}
+
+header .location {
+    background-color: #E7E7E7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.location i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.bouton span {color: white; background-color: $colour-primary; border-radius: 25%;}
+
+body {
+    margin: 0;
+}
+
+#fonctionnement {
+    padding: 0px 20px 30px 20px;
+}
+
+#restaurants {
+    background-color: #f6f6f6;
+    padding: 20px 20px 60px 20px;
+}
+
+
+#fonctionnement li::marker {
+    background-color: $colour-primary;
+    border-radius: 20px;
+}
+
+#fonctionnement button i {
+    margin-right: 20px;
+}
+
+.card-restaurants .desc h4,
+.card-restaurants .desc p {
+    margin: 5px 0;
+}
+
+.card-restaurants {
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 275px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.card-restaurants img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-restaurants a {
+    text-decoration: none;
+    color: black;
+}
+
+.desc {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 15px;
+
+}
+
+
+
+.nouveau {
+    background-color: #88DECA;
+    color: #007C5C;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+
+}

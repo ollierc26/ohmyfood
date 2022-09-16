@@ -1,0 +1,92 @@
+header i {
+    margin-right: 90px;
+    margin-left: -90px;
+}
+
+.h1-menu {
+    font-family: shrikhand;
+    background-color: white;
+}
+
+.h1-menu i {
+    font-size: 30px;
+}
+
+.titre-menu {
+    font-family: shrikhand;
+    font-size: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 20px;
+    margin: 0;
+    border-radius: 35px 35px 0 0;
+}
+
+.titre-menu i {
+    margin-left: 55px;
+}
+
+#slider {
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.background-1 {
+    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.section-menu {
+    margin: 0px 20px 60px 20px;
+}
+
+.section-menu h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.section-menu h3::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: $colour-tertiary;
+}
+
+.section-menu h4 {
+    margin: 5px 0;
+    font-size: 23px;
+}
+
+.menu {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 200;
+}
+
+.prix {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#commander {
+    text-align: center;
+    margin-bottom: 60px;
+}
