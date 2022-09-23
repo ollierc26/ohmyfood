@@ -1,43 +1,49 @@
-header i {
-    margin-right: 90px;
-    margin-left: -90px;
+.titre-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
+
 
 .h1-menu {
     font-family: shrikhand;
     background-color: white;
 }
 
-.h1-menu i {
+.titre-header i {
     font-size: 30px;
+    padding-top: 40px;
+    position: absolute;
+    left: 25px;
 }
 
 .titre-menu {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 35px 35px 0 0;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -80px;
+    position: absolute;
+}
+
+.titre-menu h2 {
     font-family: shrikhand;
     font-size: 30px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 25px 20px;
-    margin: 0;
-    border-radius: 35px 35px 0 0;
 }
 
 .titre-menu i {
-    margin-left: 55px;
+    font-size: 25px;
 }
 
-#slider {
-    height: 320px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
 
-.background-1 {
-    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+#slider img {
+    max-height: 315px;
+    width: 100%;
+    object-fit: cover;
+
 }
 
 .section-menu {
@@ -53,8 +59,10 @@ header i {
 .section-menu h3::after {
     content: "";
     width: 50px;
-    height: 5px;
+    height: 3px;
     background-color: $colour-tertiary;
+    display: block;
+    margin-top: 10px;
 }
 
 .section-menu h4 {
@@ -62,10 +70,18 @@ header i {
     font-size: 23px;
 }
 
+
 .menu {
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-bottom: 25px;
+    display: flex;
+}
+
+.description p,
+.description h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .intro {
@@ -78,11 +94,23 @@ header i {
     font-size: 18px;
     margin: 10px 0;
     font-weight: bold;
+    width: 30px;
+    padding-top: 35px;
+    margin-right: 25px;
 }
 
 .description {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 30px);
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 15px;
 }
 
 

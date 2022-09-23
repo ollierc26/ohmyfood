@@ -47,8 +47,11 @@ p {
   font-size: 20px;
   background-color: #f5f5f5;
   color: black;
-  margin-bottom: 25px;
-  width: 345px;
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-decoration: none;
 }
 
 footer {
@@ -121,7 +124,30 @@ header .location {
 .bouton span {
   color: white;
   background-color: #9356DC;
-  border-radius: 25%;
+  border-radius: 50%;
+  margin-right: -15px;
+  z-index: 50;
+  width: 25px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.bouton i {
+  padding-right: 20px;
 }
 
 body {
@@ -163,19 +189,22 @@ body {
           justify-content: space-between;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 275px;
   position: relative;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .card-restaurants img {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
+  min-width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-restaurants a {
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 
 .desc {
@@ -183,7 +212,25 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-left: 15px;
+  padding: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.desc i {
+  padding-top: 15px;
+  font-size: 35px;
+  position: absolute;
+  right: 17px;
+}
+
+.icone-hover {
+  font-weight: 900;
+  color: #9356DC;
 }
 
 .nouveau {
@@ -197,9 +244,15 @@ body {
   right: 15px;
 }
 
-header i {
-  margin-right: 90px;
-  margin-left: -90px;
+.titre-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .h1-menu {
@@ -207,36 +260,45 @@ header i {
   background-color: white;
 }
 
-.h1-menu i {
+.titre-header i {
   font-size: 30px;
+  padding-top: 40px;
+  position: absolute;
+  left: 25px;
 }
 
 .titre-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 35px 35px 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -80px;
+  position: absolute;
+}
+
+.titre-menu h2 {
   font-family: shrikhand;
   font-size: 30px;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 25px 20px;
-  margin: 0;
-  border-radius: 35px 35px 0 0;
 }
 
 .titre-menu i {
-  margin-left: 55px;
+  font-size: 25px;
 }
 
-#slider {
-  height: 320px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.background-1 {
-  background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+#slider img {
+  max-height: 315px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-menu {
@@ -252,8 +314,10 @@ header i {
 .section-menu h3::after {
   content: "";
   width: 50px;
-  height: 5px;
+  height: 3px;
   background-color: #99E2D0;
+  display: block;
+  margin-top: 10px;
 }
 
 .section-menu h4 {
@@ -266,6 +330,15 @@ header i {
           box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description p,
+.description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .intro {
@@ -278,15 +351,32 @@ header i {
   font-size: 18px;
   margin: 10px 0;
   font-weight: bold;
+  width: 30px;
+  padding-top: 35px;
+  margin-right: 25px;
 }
 
 .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  flex-direction: column;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: calc(100% - 30px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 15px;
 }
 
 #commander {
