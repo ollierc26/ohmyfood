@@ -71,11 +71,34 @@
 }
 
 
+@mixin apparition-progressive {
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) {
+        transition: all 0.5s #{$i * 0.5}s ease-in;
+      }
+    }
+}
+
 .menu {
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-bottom: 25px;
     display: flex;
+    animation: anim-menu 2s;
+    @include apparition-progressive;
+}
+
+@keyframes anim-menu {
+    0% {
+        opacity: 0;
+        margin-top: 35px;
+    }
+
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
 }
 
 .description p,

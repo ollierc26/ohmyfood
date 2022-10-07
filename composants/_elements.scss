@@ -18,6 +18,10 @@ p {
     font-size: 20px;
 }
 
+a {
+    color: black;
+}
+
 .btn-purple {
     padding: 20px 30px;
     border-radius: 35px;
@@ -26,6 +30,11 @@ p {
     background: linear-gradient(0deg, rgba(147, 86, 220, 1) 8%, rgba(220, 86, 172, 1) 69%);
     color: white;
     border: none;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    &:hover {
+        opacity: 0.95;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+    }
 }
 
 .btn-white {
