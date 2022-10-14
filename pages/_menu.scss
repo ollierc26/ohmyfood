@@ -73,9 +73,9 @@
 
 @mixin apparition-progressive {
     @for $i from 2 through 5 {
-      &:nth-child(#{$i}) {
-        transition: all 0.5s #{$i * 0.5}s ease-in;
-      }
+        &:nth-child(#{$i}) {
+            transition: all 0.5s #{$i * 0.5}s ease-in;
+        }
     }
 }
 
@@ -140,4 +140,34 @@
 #commander {
     text-align: center;
     margin-bottom: 60px;
+}
+
+
+.check {
+    background-color: $colour-tertiary;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    margin-right: -65px;
+    opacity: 0;
+}
+
+.menu:hover .check {
+    margin-right: 0;
+    opacity: 1;
+    transition-duration: 800ms;
+}
+
+
+.check i {
+    color: #fff;
+    font-size: 23px;
+    transition: transform 700ms;
+    transition-delay: 100ms;
+}
+
+.menu:hover .check i {
+    transform: rotate(360deg);
 }
