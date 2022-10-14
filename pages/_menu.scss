@@ -86,6 +86,7 @@
     display: flex;
     animation: anim-menu 2s;
     @include apparition-progressive;
+    overflow: hidden;
 }
 
 @keyframes anim-menu {
@@ -151,12 +152,11 @@
     justify-content: center;
     border-radius: 0 20px 20px 0;
     margin-right: -65px;
-    opacity: 0;
+    transition-duration: 800ms;
 }
 
 .menu:hover .check {
     margin-right: 0;
-    opacity: 1;
     transition-duration: 800ms;
 }
 
@@ -170,4 +170,22 @@
 
 .menu:hover .check i {
     transform: rotate(360deg);
+}
+
+/*RESPONSIVE*/
+@media all and (min-width: 768px) and (max-width: 1280px) {
+    .section-menu {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .section-menu h3::after {
+        width: 140px;
+    }
 }

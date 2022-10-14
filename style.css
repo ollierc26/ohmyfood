@@ -5,7 +5,15 @@
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div {
   font-family: "Roboto";
 }
 
@@ -48,22 +56,6 @@ a {
   opacity: 0.95;
   -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
-}
-
-.btn-white {
-  padding: 20px 30px;
-  border-radius: 35px;
-  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-  border: none;
-  font-size: 20px;
-  background-color: #f5f5f5;
-  color: black;
-  display: inline-block;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-decoration: none;
 }
 
 .icone-hover {
@@ -190,6 +182,22 @@ body {
   padding: 0px 20px 30px 20px;
 }
 
+.list-fonctionnement {
+  padding: 20px 30px;
+  border-radius: 35px;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+  background-color: #f5f5f5;
+  color: black;
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-decoration: none;
+}
+
 #restaurants {
   background-color: #f6f6f6;
   padding: 20px 20px 60px 20px;
@@ -272,13 +280,6 @@ body {
 }
 
 .loading-wrap {
-  z-index: 55;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,35 +289,46 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #99E2D0;
   -webkit-animation: loading_wrap 2.5s;
           animation: loading_wrap 2.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 99;
 }
 
 @-webkit-keyframes loading_wrap {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   80% {
     opacity: 1;
+    visibility: visible;
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 
 @keyframes loading_wrap {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   80% {
     opacity: 1;
+    visibility: visible;
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -373,6 +385,49 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+/*RESPONSIVE*/
+@media all and (min-width: 768px) and (max-width: 1280px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card-restaurants {
+    width: calc(50% - 40px);
+  }
+  #fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bouton {
+    width: 500px;
+  }
+  #fonctionnement,
+  #restaurants {
+    text-align: center;
+  }
+  .titre-p {
+    text-align: left;
   }
 }
 
@@ -467,6 +522,7 @@ body {
   display: flex;
   -webkit-animation: anim-menu 2s;
           animation: anim-menu 2s;
+  overflow: hidden;
 }
 
 .menu:nth-child(2) {
@@ -574,12 +630,12 @@ body {
           justify-content: center;
   border-radius: 0 20px 20px 0;
   margin-right: -65px;
-  opacity: 0;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
 }
 
 .menu:hover .check {
   margin-right: 0;
-  opacity: 1;
   -webkit-transition-duration: 800ms;
           transition-duration: 800ms;
 }
@@ -598,5 +654,28 @@ body {
 .menu:hover .check i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+/*RESPONSIVE*/
+@media all and (min-width: 768px) and (max-width: 1280px) {
+  .section-menu {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu {
+    width: 50%;
+  }
+  .section-menu h3::after {
+    width: 140px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
