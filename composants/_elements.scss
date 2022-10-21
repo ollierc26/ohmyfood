@@ -31,9 +31,11 @@ a {
     color: white;
     border: none;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
     &:hover {
         opacity: 0.95;
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
     }
 }
 
@@ -52,8 +54,10 @@ a {
 
 .coeur:hover .icone-hover{
     opacity: 1;
+    transition: opacity 1.5s;
 }
 
 .coeur:hover .icone-coeur{
     opacity: 0;
+    transition: opacity 1s;
 }
