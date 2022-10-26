@@ -677,11 +677,6 @@ body {
 
 /*RESPONSIVE*/
 @media all and (min-width: 768px) {
-  .titre-menu {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .titre-menu h2 {
     margin-right: 20px;
   }
@@ -706,8 +701,8 @@ body {
   .section-menu h3::after {
     width: 140px;
   }
-  .titre-menu .icone-hover {
-    right: 237px;
+  .div-container {
+    max-width: 800px;
   }
 }
 /*# sourceMappingURL=style.css.map */
