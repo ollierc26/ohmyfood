@@ -129,6 +129,9 @@ header h2 {
 
 #reserver .btn-purple {
   margin-top: 20px;
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 #reserver h1 {
@@ -442,6 +445,9 @@ body {
   footer {
     text-align: center;
   }
+  footer ul {
+    text-align: center;
+  }
 }
 
 .titre-header {
@@ -699,6 +705,9 @@ body {
   }
   .section-menu h3::after {
     width: 140px;
+  }
+  .titre-menu .icone-hover {
+    right: 237px;
   }
 }
 /*# sourceMappingURL=style.css.map */
