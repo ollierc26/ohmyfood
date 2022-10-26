@@ -44,12 +44,12 @@ a {
     font-weight: 900;
     color: $colour-primary;
     opacity: 0;
-    position: absolute;
     right: 20px;
 }
 
 .icone-coeur {
     z-index: 1;
+    position: absolute;
 }
 
 .coeur:hover .icone-hover{
